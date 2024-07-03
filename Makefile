@@ -1,5 +1,7 @@
 .PHONY: build clean
 
+all: build
+
 BINARY_NAME=main
 ifeq ($(OS),Windows_NT)
 	BINARY_NAME=main.exe
@@ -20,3 +22,7 @@ endif
 
 run: build
 	./bin/$(BINARY_NAME)
+
+# test:
+# test something
+
