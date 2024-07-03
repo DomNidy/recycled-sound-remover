@@ -17,3 +17,6 @@ ifeq ($(OS),Windows_NT)
 else
 	rm -rf bin 
 endif
+
+run: build
+	./bin/$(BINARY_NAME)
