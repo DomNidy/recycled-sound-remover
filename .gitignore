@@ -1,1 +1,5 @@
+# IDE config
 .vscode
+
+# Build outputs
+bin

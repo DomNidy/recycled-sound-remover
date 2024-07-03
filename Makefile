@@ -8,12 +8,12 @@ else
 endif
 
 build: clean 
-	mkdir out
-	g++ src/main.cpp -o out/$(BINARY_NAME)
+	mkdir bin 
+	g++ src/main.cpp -o bin/$(BINARY_NAME)
 
 clean:
 ifeq ($(OS),Windows_NT)
-	-rmdir /S /Q out
+	-rmdir /S /Q bin 
 else
-	rm -rf out
+	rm -rf bin 
 endif
