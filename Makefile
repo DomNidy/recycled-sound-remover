@@ -9,7 +9,7 @@ endif
 
 build: clean 
 	mkdir out
-	g++ main.cpp -o out/$(BINARY_NAME)
+	g++ src/main.cpp -o out/$(BINARY_NAME)
 
 clean:
 ifeq ($(OS),Windows_NT)
