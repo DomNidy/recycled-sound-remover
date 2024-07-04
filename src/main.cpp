@@ -1,7 +1,9 @@
 #include <iostream>
+#include "file_scanner_builder.hpp"
 
 int main()
 {
-    std::cout << "Hello, World!" << std::endl;
+    std::shared_ptr<file_scanner::FileScannerBuilder> file_scanner_builder = file_scanner::create();
+
     return 0;
 }
